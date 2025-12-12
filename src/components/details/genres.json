@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_details_genres",
+  "info": {
+    "displayName": "genre",
+    "icon": "bulletList",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "genre": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::genre.genre"
+    }
+  }
+}

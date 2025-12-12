@@ -1,0 +1,128 @@
+{
+  "collectionName": "components_components_images",
+  "info": {
+    "displayName": "image",
+    "icon": "folder",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "width": {
+      "type": "enumeration",
+      "enum": [
+        "width_12.5",
+        "width_25",
+        "width_33",
+        "width_37.5",
+        "width_50",
+        "width_62.5",
+        "width_66",
+        "width_75",
+        "width_87.5",
+        "width_100"
+      ],
+      "default": "width_100"
+    },
+    "float": {
+      "type": "enumeration",
+      "enum": [
+        "none",
+        "left",
+        "right"
+      ],
+      "default": "none"
+    },
+    "slider": {
+      "type": "enumeration",
+      "enum": [
+        "clean",
+        "with_thumbnails",
+        "with_bubbles"
+      ],
+      "default": "clean"
+    },
+    "effect": {
+      "type": "enumeration",
+      "enum": [
+        "none",
+        "parallax",
+        "zoom",
+        "opacity"
+      ],
+      "default": "none"
+    },
+    "lightbox": {
+      "type": "boolean",
+      "default": false
+    },
+    "quality": {
+      "type": "enumeration",
+      "enum": [
+        "q_25",
+        "q_50",
+        "q_75",
+        "q_100"
+      ],
+      "default": "q_50"
+    },
+    "link": {
+      "type": "string"
+    },
+    "target": {
+      "type": "enumeration",
+      "enum": [
+        "_self",
+        "_blank"
+      ],
+      "default": "_self"
+    },
+    "caption": {
+      "type": "boolean",
+      "default": false
+    },
+    "tab_id": {
+      "type": "string"
+    },
+    "gallery": {
+      "type": "boolean",
+      "default": false
+    },
+    "imageWidth": {
+      "type": "enumeration",
+      "enum": [
+        "width_12.5",
+        "width_25",
+        "width_33",
+        "width_37.5",
+        "width_50",
+        "width_62.5",
+        "width_66",
+        "width_75",
+        "width_87.5",
+        "width_100"
+      ],
+      "default": "width_25",
+      "required": false
+    },
+    "position": {
+      "type": "enumeration",
+      "enum": [
+        "left",
+        "center",
+        "right"
+      ],
+      "default": "left"
+    }
+  }
+}

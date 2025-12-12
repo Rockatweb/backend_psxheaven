@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_details_customs",
+  "info": {
+    "displayName": "custom",
+    "icon": "bulletList"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "text": {
+      "type": "string"
+    }
+  }
+}

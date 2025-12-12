@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_details_gamemodes",
+  "info": {
+    "displayName": "Gamemode",
+    "icon": "bulletList",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "gamemode": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::gamemode.gamemode"
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_components_openers",
+  "info": {
+    "displayName": "opener",
+    "icon": "dashboard",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "type": "component",
+      "repeatable": false,
+      "component": "components.image"
+    },
+    "richtext": {
+      "type": "component",
+      "repeatable": false,
+      "component": "components.richtext"
+    },
+    "sidebar": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::game-detail.game-detail"
+    },
+    "intro": {
+      "type": "customField",
+      "customField": "plugin::ckeditor.CKEditor",
+      "options": {
+        "output": "HTML",
+        "preset": "light",
+        "licenseKey": "eyJhbGciOiJFUzI1NiJ9.eyJleHAiOjE3OTcxMTk5OTksImp0aSI6IjE2NzUwM2I1LTY0NjktNDA1Ni1iZTk4LTlkM2I4MmUyMjNhMSIsInVzYWdlRW5kcG9pbnQiOiJodHRwczovL3Byb3h5LWV2ZW50LmNrZWRpdG9yLmNvbSIsImRpc3RyaWJ1dGlvbkNoYW5uZWwiOlsiY2xvdWQiLCJkcnVwYWwiXSwiZmVhdHVyZXMiOlsiRFJVUCIsIkUyUCIsIkUyVyJdLCJyZW1vdmVGZWF0dXJlcyI6WyJQQiIsIlJGIiwiU0NIIiwiVENQIiwiVEwiLCJUQ1IiLCJJUiIsIlNVQSIsIkI2NEEiLCJMUCIsIkhFIiwiUkVEIiwiUEZPIiwiV0MiLCJGQVIiLCJCS00iLCJGUEgiLCJNUkUiXSwidmMiOiI2NWE2MjRmZiJ9.sCwI3xAjQZ7Xv9TIioMCjyeb0AIoWS0MKMy8-A6mBZBmHMLlOVF-dbQJ0WhOu5N506ng-t0y_psGUTFyWDaGyg"
+      }
+    }
+  }
+}

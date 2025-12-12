@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_logo_logos",
+  "info": {
+    "displayName": "logo",
+    "icon": "attachment"
+  },
+  "options": {},
+  "attributes": {
+    "logo": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "position": {
+      "type": "enumeration",
+      "enum": [
+        "left",
+        "center",
+        "right"
+      ]
+    }
+  }
+}

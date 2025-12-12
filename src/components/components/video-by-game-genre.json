@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_components_video_by_game_genres",
+  "info": {
+    "displayName": "VideoByGameGenre",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "genre": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::genre.genre"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_details_headlines",
+  "info": {
+    "displayName": "headline",
+    "icon": "bulletList",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "headline": {
+      "type": "enumeration",
+      "enum": [
+        "Details",
+        "Entwicklung",
+        "Sonstiges",
+        "Wissenswertes",
+        "Veröffentlichung",
+        "Podcast"
+      ]
+    }
+  }
+}

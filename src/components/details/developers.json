@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_details_developers",
+  "info": {
+    "displayName": "developer",
+    "icon": "bulletList",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "developer": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::developer.developer"
+    }
+  }
+}

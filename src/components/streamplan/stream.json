@@ -1,0 +1,38 @@
+{
+  "collectionName": "components_streamplan_streams",
+  "info": {
+    "displayName": "stream",
+    "icon": "clock",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "day": {
+      "type": "enumeration",
+      "enum": [
+        "Mo",
+        "Di",
+        "Mi",
+        "Do",
+        "Fr",
+        "Sa",
+        "So"
+      ]
+    },
+    "skipNextStream": {
+      "type": "boolean",
+      "default": false
+    },
+    "from": {
+      "type": "time"
+    },
+    "to": {
+      "type": "time"
+    },
+    "games": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::game.game"
+    }
+  }
+}

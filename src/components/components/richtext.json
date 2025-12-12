@@ -1,0 +1,46 @@
+{
+  "collectionName": "components_components_richtexts",
+  "info": {
+    "displayName": "richtext",
+    "icon": "apps",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "richtext": {
+      "type": "customField",
+      "customField": "plugin::ckeditor.CKEditor",
+      "options": {
+        "output": "HTML",
+        "preset": "light",
+        "licenseKey": "eyJhbGciOiJFUzI1NiJ9.eyJleHAiOjE3OTcxMTk5OTksImp0aSI6IjE2NzUwM2I1LTY0NjktNDA1Ni1iZTk4LTlkM2I4MmUyMjNhMSIsInVzYWdlRW5kcG9pbnQiOiJodHRwczovL3Byb3h5LWV2ZW50LmNrZWRpdG9yLmNvbSIsImRpc3RyaWJ1dGlvbkNoYW5uZWwiOlsiY2xvdWQiLCJkcnVwYWwiXSwiZmVhdHVyZXMiOlsiRFJVUCIsIkUyUCIsIkUyVyJdLCJyZW1vdmVGZWF0dXJlcyI6WyJQQiIsIlJGIiwiU0NIIiwiVENQIiwiVEwiLCJUQ1IiLCJJUiIsIlNVQSIsIkI2NEEiLCJMUCIsIkhFIiwiUkVEIiwiUEZPIiwiV0MiLCJGQVIiLCJCS00iLCJGUEgiLCJNUkUiXSwidmMiOiI2NWE2MjRmZiJ9.sCwI3xAjQZ7Xv9TIioMCjyeb0AIoWS0MKMy8-A6mBZBmHMLlOVF-dbQJ0WhOu5N506ng-t0y_psGUTFyWDaGyg"
+      }
+    },
+    "width": {
+      "type": "enumeration",
+      "enum": [
+        "width_12.5",
+        "width_25",
+        "width_37.5",
+        "width_50",
+        "width_62.5",
+        "width_75",
+        "width_87.5",
+        "width_100"
+      ],
+      "default": "width_100"
+    },
+    "verticalPosition": {
+      "type": "enumeration",
+      "enum": [
+        "top",
+        "center",
+        "bottom"
+      ],
+      "default": "top"
+    },
+    "tab_id": {
+      "type": "string"
+    }
+  }
+}

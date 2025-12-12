@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_components_horizontal_rows",
+  "info": {
+    "displayName": "HorizontalRow",
+    "icon": "arrowRight",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "show": {
+      "type": "boolean",
+      "default": true
+    },
+    "width": {
+      "type": "enumeration",
+      "enum": [
+        "width_12.5",
+        "width_25",
+        "width_37.5",
+        "width_50",
+        "width_62.5",
+        "width_75",
+        "width_87.5",
+        "width_100"
+      ],
+      "default": "width_100"
+    }
+  }
+}

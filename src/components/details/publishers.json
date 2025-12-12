@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_details_publishers",
+  "info": {
+    "displayName": "publisher",
+    "icon": "bulletList",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "publisher": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::publisher.publisher"
+    }
+  }
+}

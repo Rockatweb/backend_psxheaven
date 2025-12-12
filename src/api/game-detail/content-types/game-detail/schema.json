@@ -1,0 +1,55 @@
+{
+  "kind": "collectionType",
+  "collectionName": "game_details",
+  "info": {
+    "singularName": "game-detail",
+    "pluralName": "game-details",
+    "displayName": "GameDetails",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "_softDeletedAt": {
+      "type": "datetime",
+      "configurable": false,
+      "writable": false,
+      "visible": false,
+      "private": true
+    },
+    "_softDeletedById": {
+      "type": "integer",
+      "configurable": false,
+      "writable": false,
+      "visible": false,
+      "private": true
+    },
+    "_softDeletedByType": {
+      "type": "string",
+      "configurable": false,
+      "writable": false,
+      "visible": false,
+      "private": true
+    },
+    "data": {
+      "type": "dynamiczone",
+      "components": [
+        "details.custom",
+        "details.developers",
+        "details.gamemodes",
+        "details.genres",
+        "details.headline",
+        "details.original-price",
+        "details.publishers",
+        "details.release",
+        "components.image",
+        "details.link"
+      ]
+    },
+    "Name": {
+      "type": "string"
+    }
+  }
+}

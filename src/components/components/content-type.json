@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_components_content_types",
+  "info": {
+    "displayName": "contentType",
+    "icon": "bulletList",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "start",
+        "blog",
+        "games",
+        "gameslist",
+        "podcast",
+        "lexicon"
+      ]
+    }
+  }
+}

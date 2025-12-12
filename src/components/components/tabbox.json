@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_components_tabboxes",
+  "info": {
+    "displayName": "tabbox",
+    "icon": "expand",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "tab": {
+      "displayName": "tab",
+      "type": "component",
+      "repeatable": true,
+      "component": "tab.tab"
+    },
+    "width": {
+      "type": "enumeration",
+      "enum": [
+        "width_12.5",
+        "width_25",
+        "width_37.5",
+        "width_50",
+        "width_62.5",
+        "width_75",
+        "width_87.5",
+        "width_100"
+      ]
+    }
+  }
+}

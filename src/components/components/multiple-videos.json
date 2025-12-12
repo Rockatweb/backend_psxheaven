@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_components_multiple_videos",
+  "info": {
+    "displayName": "multipleVideos",
+    "icon": "apps",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "multipleVideos": {
+      "type": "component",
+      "repeatable": true,
+      "component": "components.video"
+    },
+    "width": {
+      "type": "enumeration",
+      "enum": [
+        "width_12.5",
+        "width_25",
+        "width_37.5",
+        "width_50",
+        "width_62.5",
+        "width_75",
+        "width_87.5",
+        "width_100"
+      ],
+      "default": "width_100"
+    },
+    "tab_id": {
+      "type": "string"
+    }
+  }
+}

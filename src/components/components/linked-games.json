@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_components_linked_games",
+  "info": {
+    "displayName": "linkedGames",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "linkedGames": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::page.page"
+    }
+  }
+}

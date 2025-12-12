@@ -1,0 +1,44 @@
+{
+  "collectionName": "components_components_videos",
+  "info": {
+    "displayName": "video",
+    "icon": "cube",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "video": {
+      "type": "string"
+    },
+    "width": {
+      "type": "enumeration",
+      "enum": [
+        "width_12.5",
+        "width_25",
+        "width_37.5",
+        "width_50",
+        "width_62.5",
+        "width_75",
+        "width_87.5",
+        "width_100"
+      ],
+      "default": "width_25"
+    },
+    "tab_id": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "Caching": {
+      "type": "enumeration",
+      "enum": [
+        "Daily",
+        "Weekly",
+        "Monthly",
+        "Quarterly"
+      ],
+      "default": "Quarterly"
+    }
+  }
+}

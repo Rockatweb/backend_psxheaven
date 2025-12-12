@@ -1,0 +1,46 @@
+{
+  "collectionName": "components_components_ratings",
+  "info": {
+    "displayName": "rating",
+    "icon": "crown",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "graphics_text": {
+      "type": "string"
+    },
+    "graphics_rating": {
+      "type": "integer",
+      "default": 0,
+      "max": 5
+    },
+    "sound_text": {
+      "type": "string"
+    },
+    "sound_rating": {
+      "type": "integer",
+      "default": 0,
+      "max": 5
+    },
+    "story_text": {
+      "type": "string"
+    },
+    "story_rating": {
+      "type": "integer",
+      "default": 0,
+      "max": 5
+    },
+    "gameplay_text": {
+      "type": "string"
+    },
+    "gameplay_rating": {
+      "type": "integer",
+      "default": 0,
+      "max": 5
+    },
+    "rating_text": {
+      "type": "blocks"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_components_multiple_playlists",
+  "info": {
+    "displayName": "multiplePlaylists",
+    "icon": "apps",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "multiplePlaylists": {
+      "type": "component",
+      "repeatable": true,
+      "component": "components.playlist"
+    },
+    "tab_id": {
+      "type": "string"
+    }
+  }
+}

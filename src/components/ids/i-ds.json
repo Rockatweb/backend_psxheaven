@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_ids_i_ds",
+  "info": {
+    "displayName": "IDs",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Serialnumber": {
+      "type": "string"
+    },
+    "region": {
+      "type": "enumeration",
+      "enum": [
+        "ntsc",
+        "ntsc-j",
+        "pal",
+        "global"
+      ]
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "short_urls",
+  "info": {
+    "singularName": "short-url",
+    "pluralName": "short-urls",
+    "displayName": "short-url"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "link": {
+      "type": "text"
+    },
+    "slug": {
+      "type": "uid"
+    }
+  }
+}

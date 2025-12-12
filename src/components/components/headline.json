@@ -1,0 +1,49 @@
+{
+  "collectionName": "components_components_headlines",
+  "info": {
+    "displayName": "headline",
+    "icon": "bulletList",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "headline": {
+      "type": "string"
+    },
+    "width": {
+      "type": "enumeration",
+      "enum": [
+        "width_12.5",
+        "width_25",
+        "width_37.5",
+        "width_50",
+        "width_62.5",
+        "width_75",
+        "width_87.5",
+        "width_100"
+      ],
+      "default": "width_100"
+    },
+    "tab_id": {
+      "type": "string"
+    },
+    "align": {
+      "type": "enumeration",
+      "enum": [
+        "left",
+        "center",
+        "right"
+      ],
+      "default": "left"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "h2",
+        "h3",
+        "h4"
+      ],
+      "default": "h2"
+    }
+  }
+}

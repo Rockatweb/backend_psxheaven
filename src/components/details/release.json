@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_details_releases",
+  "info": {
+    "displayName": "release",
+    "icon": "bulletList",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "region": {
+      "type": "enumeration",
+      "enum": [
+        "PAL",
+        "NTSC",
+        "NTSC-J"
+      ]
+    },
+    "price": {
+      "type": "string"
+    },
+    "date": {
+      "type": "date"
+    }
+  }
+}

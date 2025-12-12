@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_details_original_prices",
+  "info": {
+    "displayName": "original Price",
+    "icon": "feather"
+  },
+  "options": {},
+  "attributes": {
+    "price": {
+      "type": "string"
+    }
+  }
+}

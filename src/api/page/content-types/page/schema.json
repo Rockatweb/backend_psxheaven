@@ -1,0 +1,146 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pages",
+  "info": {
+    "singularName": "page",
+    "pluralName": "pages",
+    "displayName": "page",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "_softDeletedAt": {
+      "type": "datetime",
+      "configurable": false,
+      "writable": false,
+      "visible": false,
+      "private": true
+    },
+    "_softDeletedById": {
+      "type": "integer",
+      "configurable": false,
+      "writable": false,
+      "visible": false,
+      "private": true
+    },
+    "_softDeletedByType": {
+      "type": "string",
+      "configurable": false,
+      "writable": false,
+      "visible": false,
+      "private": true
+    },
+    "title": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid"
+    },
+    "header": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "lexicon": {
+      "type": "boolean"
+    },
+    "logo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "logo.logo"
+    },
+    "live": {
+      "type": "boolean",
+      "default": false
+    },
+    "teaserText": {
+      "type": "text"
+    },
+    "teaserImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "parent": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::page.page"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "Start",
+        "Blogpage",
+        "Blog",
+        "Games",
+        "Game",
+        "Magazins",
+        "Magazin",
+        "Übersicht",
+        "Demo",
+        "Podcast",
+        "Podcasts",
+        "Lexikon",
+        "Spieleliste",
+        "Tipps & Tricks",
+        "Tipps",
+        "developer",
+        "publisher",
+        "genre",
+        "gamemode"
+      ]
+    },
+    "components": {
+      "type": "dynamiczone",
+      "components": [
+        "components.content-type",
+        "components.headline",
+        "components.image",
+        "components.multiple-playlists",
+        "components.multiple-videos",
+        "components.playlist",
+        "components.richtext",
+        "components.tabbox",
+        "components.video",
+        "components.linked-games",
+        "components.horizontal-row",
+        "components.video-by-game-genre",
+        "components.rating"
+      ]
+    },
+    "opener": {
+      "type": "component",
+      "repeatable": false,
+      "component": "components.opener"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "IDs": {
+      "displayName": "IDs",
+      "type": "component",
+      "repeatable": true,
+      "component": "ids.i-ds"
+    },
+    "category": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::category.category"
+    },
+    "metaDescription": {
+      "type": "string",
+      "maxLength": 200,
+      "minLength": 120,
+      "required": true
+    }
+  }
+}
