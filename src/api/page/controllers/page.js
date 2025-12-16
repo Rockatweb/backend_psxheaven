@@ -27,7 +27,6 @@ module.exports = createCoreController('api::page.page', ({ strapi }) => {
     },
     async randomMagazin(ctx) {
       const entries = await strapi.documents('api::page.page').findMany({
-        // fields: ["title", "slug", "opener"],
         filters: {
           type: {
             $in: 'Magazin'
@@ -44,7 +43,6 @@ module.exports = createCoreController('api::page.page', ({ strapi }) => {
     },
     async randomBlog(ctx) {
       const entries = await strapi.documents('api::page.page').findMany({
-        // fields: ["title", "slug", "opener"],
         filters: {
           type: {
             $in: 'Blog'
@@ -79,28 +77,47 @@ module.exports = createCoreController('api::page.page', ({ strapi }) => {
       ctx.body = randomEntries.slice(0, numberOfEntries);
     },
     async start(ctx) {
+      const page = parseInt(ctx.params.page, 10) || 1;
       const itemsPerPage = ctx.params.items || 10;
 
-      ctx.body = await strapi.entityService.findPage(
-        'api::page.page',
-        {
-          page: parseInt(ctx.params.page, 10) || 1,
-          pageSize: itemsPerPage,
-          filters: {
-            type: {
-              $notIn: ['Start', 'Blogpage', 'Spieleliste', 'Tipps', 'Podcasts', 'Games']
+      const [data, total] = await strapi.db
+          .query('api::page.page')
+          .findWithCount({
+            where: {
+              type: {
+                $notIn: [
+                  'Start',
+                  'Blogpage',
+                  'Spieleliste',
+                  'Tipps',
+                  'Podcasts',
+                  'Games',
+                ],
+              },
+              slug: {
+                $notIn: ['', 'lexicon', 'magazine'],
+              },
+              live: true,
             },
-            slug: {
-              $notIn: ['', 'lexicon', 'magazine']
+            populate: true,
+            orderBy: {
+              publishedAt: 'desc',
             },
-            live: {
-              $eq: true
-            }
+            offset: (page - 1) * pageSize,
+            limit: pageSize,
+          });
+
+      ctx.body = {
+        data,
+        meta: {
+          pagination: {
+            page,
+            pageSize,
+            pageCount: Math.ceil(total / pageSize),
+            total,
           },
-          populate: 'deep',
-          sort: 'publishedAt:desc'
-        }
-      );
+        },
+      };
     },
     async customPage(ctx) {
       const itemsPerPage = ctx.params.items || 10;
