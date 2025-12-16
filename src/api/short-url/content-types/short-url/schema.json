@@ -15,7 +15,8 @@
       "type": "text"
     },
     "slug": {
-      "type": "uid"
+      "type": "uid",
+      "targetField": "text"
     }
   }
 }
