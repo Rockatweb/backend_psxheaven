@@ -1,11 +1,11 @@
 "use strict";
 
-module.exports = {
+export default {
   routes: [
     {
       method: "GET",
-      path: "/page/randomMagazin",
-      handler: "page.randomMagazin",
+      path: "/page/customPage/:type/:page/:items?",
+      handler: "page.customPage",
       config: {
         auth: false,
       },

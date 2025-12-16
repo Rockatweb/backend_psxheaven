@@ -1,11 +1,11 @@
 "use strict";
 
-module.exports = {
+export default {
   routes: [
     {
       method: "GET",
-      path: "/page/randomPodcast",
-      handler: "page.randomPodcast",
+      path: "/page/gamesByGenre/:id",
+      handler: "page.gamesByGenre",
       config: {
         auth: false,
       },

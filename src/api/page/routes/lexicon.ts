@@ -1,11 +1,11 @@
 "use strict";
 
-module.exports = {
+export default {
   routes: [
     {
       method: "GET",
-      path: "/page/customPage/:type/:page/:items?",
-      handler: "page.customPage",
+      path: "/page/lexicon",
+      handler: "page.getLexicon",
       config: {
         auth: false,
       },
