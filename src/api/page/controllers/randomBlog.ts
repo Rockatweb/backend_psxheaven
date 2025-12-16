@@ -13,9 +13,15 @@ export default factories.createCoreController(
         }
       );
 
-      const randomEntries = [...entries].sort(
-        () => 0.5 - Math.random()
-      );
+      // Sicherstellen, dass entries ein Array ist
+      const entriesArray = Array.isArray(entries) ? entries : [entries];
+
+      if (!entriesArray || entriesArray.length === 0) {
+        ctx.body = [];
+        return;
+      }
+
+      const randomEntries = [...entriesArray].sort(() => 0.5 - Math.random());
 
       ctx.body = randomEntries.slice(0, numberOfEntries);
     },

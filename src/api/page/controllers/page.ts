@@ -6,11 +6,9 @@ export default factories.createCoreController(
   'api::page.page',
   ({ strapi }) => ({
 
-    /* ------------------------------------------------ */
-    /* RANDOM HELPERS                                   */
-    /* ------------------------------------------------ */
+    async randomByType(ctx) {
+      const { type, extraFilters = {} } = ctx.params; // oder ctx.request.body/query
 
-    async randomByType(type: string, extraFilters = {}) {
       const entries = await strapi.entityService.findMany(
         'api::page.page',
         {
@@ -23,11 +21,16 @@ export default factories.createCoreController(
         }
       );
 
-      if (!entries?.length) return [];
+      const entriesArray = Array.isArray(entries) ? entries : [entries];
 
-      return [...entries]
-        .sort(() => 0.5 - Math.random())
-        .slice(0, NUMBER_OF_ENTRIES);
+      if (!entriesArray || entriesArray.length === 0) {
+        ctx.body = [];
+        return;
+      }
+
+      const randomEntries = [...entriesArray].sort(() => 0.5 - Math.random());
+
+      ctx.body = randomEntries.slice(0, NUMBER_OF_ENTRIES);
     },
 
     async randomGame(ctx) {

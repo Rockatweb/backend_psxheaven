@@ -6,6 +6,7 @@ export default factories.createCoreController(
     async random(ctx) {
       const numberOfEntries = 1;
 
+      // findMany gibt in Strapi 5 immer ein Array zurück, aber TS kennt es evtl. nicht
       const entries = await strapi.entityService.findMany(
         'api::page.page',
         {
@@ -19,14 +20,15 @@ export default factories.createCoreController(
         }
       );
 
-      if (!entries || entries.length === 0) {
+      // Sicherstellen, dass entries ein Array ist
+      const entriesArray = Array.isArray(entries) ? entries : [entries];
+
+      if (!entriesArray || entriesArray.length === 0) {
         ctx.body = [];
         return;
       }
 
-      const randomEntries = [...entries].sort(
-        () => 0.5 - Math.random()
-      );
+      const randomEntries = [...entriesArray].sort(() => 0.5 - Math.random());
 
       ctx.body = randomEntries.slice(0, numberOfEntries);
     },
